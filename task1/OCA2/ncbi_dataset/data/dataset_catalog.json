@@ -1,0 +1,17 @@
+{
+  "genes": {
+    "files": [
+      {
+        "filePath": "gene.fna",
+        "fileType": "GENOMIC_NUCLEOTIDE_FASTA",
+        "uncompressedLengthBytes": "1234811"
+      },
+      {
+        "filePath": "data_report.jsonl",
+        "fileType": "DATA_REPORT",
+        "uncompressedLengthBytes": "5017"
+      }
+    ]
+  },
+  "apiVersion": "V2"
+}
