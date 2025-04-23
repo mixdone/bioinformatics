@@ -16,15 +16,15 @@ OCA Type II имеет сильно варьируемый фенотип. Во�
   # Aligned_sequences: 2
   # 1: 124133839-124137483
   # 2: 89918862-89920972
-  # Matrix: EBLOSUM62
-  # Gap_penalty: 14
+  # Matrix: EDNAFULL
+  # Gap_penalty: 16
   # Extend_penalty: 4
   #
-  # Length: 3776
-  # Identity:    2122/3776 (56.2%)
-  # Similarity:  2125/3776 (56.3%)
-  # Gaps:         257/3776 ( 6.8%)
-  # Score: 10327
+  # Length: 1667
+  # Identity:    1194/1667 (71.6%)
+  # Similarity:  1194/1667 (71.6%)
+  # Gaps:          94/1667 ( 5.6%)
+  # Score: 3706
   # 
   #
   #=======================================
