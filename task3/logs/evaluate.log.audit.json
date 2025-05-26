@@ -1,0 +1,87 @@
+{
+    "ID": "0ldf1ztdpb2r7k4incvp",
+    "ProcessName": "evaluate",
+    "Command": "bash -c '\n\tmapped_percent=$(grep -oE \"[0-9]+\\.[0-9]+%\" -m1 ../alignment_report.txt | tr -d \"%\")\n\techo \"Mapped percent: $mapped_percent%\"\n\tif (( $(echo \"$mapped_percent \u003e 90\" | bc -l) )); then\n\t\techo \"OK\"\n\telse\n\t\techo \"Not OK\"\n\tfi ' \u003e logs/evaluate.log 2\u003e\u00261",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2025-05-27T00:05:16.235293605+07:00",
+    "FinishTime": "2025-05-27T00:05:16.243745932+07:00",
+    "ExecTimeNS": 8452316,
+    "OutFiles": {
+        "log": "logs/evaluate.log"
+    },
+    "Upstream": {
+        "alignment_report.txt": {
+            "ID": "idpqqv4hqssow0ejz9jq",
+            "ProcessName": "flagstat",
+            "Command": "samtools flagstat ../aligned.bam \u003e alignment_report.txt 2\u003e logs/flagstat.log",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "2025-05-26T23:50:09.423325995+07:00",
+            "FinishTime": "2025-05-26T23:50:29.401047651+07:00",
+            "ExecTimeNS": 19977721636,
+            "OutFiles": {
+                "log": "logs/flagstat.log",
+                "report": "alignment_report.txt"
+            },
+            "Upstream": {
+                "aligned.bam": {
+                    "ID": "qx3u6m52rbj6ww5q34q2",
+                    "ProcessName": "sam2bam",
+                    "Command": "samtools view -b ../aligned.sam \u003e aligned.bam 2\u003e logs/sam2bam.log",
+                    "Params": {},
+                    "Tags": {},
+                    "StartTime": "2025-05-26T23:48:21.762213385+07:00",
+                    "FinishTime": "2025-05-26T23:50:09.41754139+07:00",
+                    "ExecTimeNS": 107655328066,
+                    "OutFiles": {
+                        "bam": "aligned.bam",
+                        "log": "logs/sam2bam.log"
+                    },
+                    "Upstream": {
+                        "aligned.sam": {
+                            "ID": "sfb0lcpgr8aq00k2cgb3",
+                            "ProcessName": "align",
+                            "Command": "minimap2 -ax map-ont ../ref.mmi ../SRR32962948.fastq \u003e aligned.sam 2\u003e logs/align.log",
+                            "Params": {},
+                            "Tags": {},
+                            "StartTime": "2025-05-26T23:41:55.776295442+07:00",
+                            "FinishTime": "2025-05-26T23:48:21.759499584+07:00",
+                            "ExecTimeNS": 385983204071,
+                            "OutFiles": {
+                                "log": "logs/align.log",
+                                "sam": "aligned.sam"
+                            },
+                            "Upstream": {
+                                "SRR32962948.fastq": {
+                                    "ID": "7pqumfobjt23ax49kuh9",
+                                    "ProcessName": "",
+                                    "Command": "",
+                                    "Params": {},
+                                    "Tags": {},
+                                    "StartTime": "0001-01-01T00:00:00Z",
+                                    "FinishTime": "0001-01-01T00:00:00Z",
+                                    "ExecTimeNS": -1,
+                                    "OutFiles": {},
+                                    "Upstream": {}
+                                },
+                                "ref.mmi": {
+                                    "ID": "qqhqgv46kz478e1b21hm",
+                                    "ProcessName": "",
+                                    "Command": "",
+                                    "Params": {},
+                                    "Tags": {},
+                                    "StartTime": "0001-01-01T00:00:00Z",
+                                    "FinishTime": "0001-01-01T00:00:00Z",
+                                    "ExecTimeNS": -1,
+                                    "OutFiles": {},
+                                    "Upstream": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

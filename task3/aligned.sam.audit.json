@@ -1,0 +1,40 @@
+{
+    "ID": "sfb0lcpgr8aq00k2cgb3",
+    "ProcessName": "align",
+    "Command": "minimap2 -ax map-ont ../ref.mmi ../SRR32962948.fastq \u003e aligned.sam 2\u003e logs/align.log",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2025-05-26T23:41:55.776295442+07:00",
+    "FinishTime": "2025-05-26T23:48:21.759499584+07:00",
+    "ExecTimeNS": 385983204071,
+    "OutFiles": {
+        "log": "logs/align.log",
+        "sam": "aligned.sam"
+    },
+    "Upstream": {
+        "SRR32962948.fastq": {
+            "ID": "7pqumfobjt23ax49kuh9",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        },
+        "ref.mmi": {
+            "ID": "qqhqgv46kz478e1b21hm",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}

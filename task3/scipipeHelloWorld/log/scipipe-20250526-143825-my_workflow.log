@@ -1,0 +1,6 @@
+AUDIT   2025/05/26 14:38:25 [Workflow:my_workflow] Starting workflow (Writing log to log/scipipe-20250526-143825-my_workflow.log)
+AUDIT   2025/05/26 14:38:25 [Task:fooer] Executing: echo foo > foo.txt
+AUDIT   2025/05/26 14:38:25 [Task:fooer] Finished: echo foo > foo.txt
+AUDIT   2025/05/26 14:38:25 [Task:foo2bar] Executing: sed 's/foo/bar/g' ../foo.txt > foo.txt.bar.txt
+AUDIT   2025/05/26 14:38:25 [Task:foo2bar] Finished: sed 's/foo/bar/g' ../foo.txt > foo.txt.bar.txt
+AUDIT   2025/05/26 14:38:25 [Workflow:my_workflow] Finished workflow (Log written to log/scipipe-20250526-143825-my_workflow.log)

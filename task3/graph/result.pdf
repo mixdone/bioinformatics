@@ -1,0 +1,21 @@
+digraph "minimap2-nanopore-pipeline" {
+  rankdir=LR;
+  graph [fontname="Arial",fontsize=13,color="#384A52",fontcolor="#384A52"];
+  node  [fontname="Arial",fontsize=11,color="#384A52",fontcolor="#384A52",fillcolor="#EFF2F5",shape=box,style=filled];
+  edge  [fontname="Arial",fontsize=9, color="#384A52",fontcolor="#384A52"];
+  "align" [shape=box];
+  "evaluate" [shape=box];
+  "fastqc" [shape=box];
+  "flagstat" [shape=box];
+  "index" [shape=box];
+  "read_src" [shape=box];
+  "ref_src" [shape=box];
+  "sam2bam" [shape=box];
+  "align" -> "sam2bam" [taillabel="sam", headlabel="sam"];
+  "flagstat" -> "evaluate" [taillabel="report", headlabel="report"];
+  "index" -> "align" [taillabel="mmi", headlabel="index"];
+  "read_src" -> "fastqc" [taillabel="fastq", headlabel="fastq"];
+  "read_src" -> "align" [taillabel="fastq", headlabel="reads"];
+  "ref_src" -> "index" [taillabel="ref", headlabel="ref"];
+  "sam2bam" -> "flagstat" [taillabel="bam", headlabel="bam"];
+}

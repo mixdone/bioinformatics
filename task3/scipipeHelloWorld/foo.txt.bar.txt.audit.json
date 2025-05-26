@@ -1,0 +1,29 @@
+{
+    "ID": "cb6q5wjwo4644w18mefy",
+    "ProcessName": "foo2bar",
+    "Command": "sed 's/foo/bar/g' ../foo.txt \u003e foo.txt.bar.txt",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2025-05-26T14:38:25.55389027+07:00",
+    "FinishTime": "2025-05-26T14:38:25.561939045+07:00",
+    "ExecTimeNS": 8048786,
+    "OutFiles": {
+        "bar": "foo.txt.bar.txt"
+    },
+    "Upstream": {
+        "foo.txt": {
+            "ID": "jmzfpmwnxiowefd0kqjm",
+            "ProcessName": "fooer",
+            "Command": "echo foo \u003e foo.txt",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "2025-05-26T14:38:25.547433894+07:00",
+            "FinishTime": "2025-05-26T14:38:25.552736026+07:00",
+            "ExecTimeNS": 5302132,
+            "OutFiles": {
+                "foo": "foo.txt"
+            },
+            "Upstream": {}
+        }
+    }
+}

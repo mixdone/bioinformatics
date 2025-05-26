@@ -1,0 +1,25 @@
+AUDIT   2025/05/27 00:05:16 [Workflow:minimap2-nanopore-pipeline] Starting workflow (Writing log to log/scipipe-20250527-000516-minimap2-nanopore-pipeline.log)
+AUDIT   2025/05/27 00:05:16 [Task:read_src] Output file already exists, so skipping: SRR32962948.fastq
+AUDIT   2025/05/27 00:05:16 [Task:ref_src] Output file already exists, so skipping: GCA_000005845.2_ASM584v2_genomic.fna
+AUDIT   2025/05/27 00:05:16 [Task:index] Output file already exists, so skipping: ref.mmi
+AUDIT   2025/05/27 00:05:16 [Task:index] Output file already exists, so skipping: ref_index.done
+AUDIT   2025/05/27 00:05:16 [Task:fastqc] Executing: fastqc ../SRR32962948.fastq -o fastqc_out > logs/fastqc.log 2>&1
+AUDIT   2025/05/27 00:05:16 [Task:align] Output file already exists, so skipping: aligned.sam
+AUDIT   2025/05/27 00:05:16 [Task:sam2bam] Output file already exists, so skipping: aligned.bam
+AUDIT   2025/05/27 00:05:16 [Task:flagstat] Output file already exists, so skipping: alignment_report.txt
+AUDIT   2025/05/27 00:05:16 [Task:evaluate] Executing: bash -c '
+	mapped_percent=$(grep -oE "[0-9]+\.[0-9]+%" -m1 ../alignment_report.txt | tr -d "%")
+	echo "Mapped percent: $mapped_percent%"
+	if (( $(echo "$mapped_percent > 90" | bc -l) )); then
+		echo "OK"
+	else
+		echo "Not OK"
+	fi ' > logs/evaluate.log 2>&1
+AUDIT   2025/05/27 00:05:16 [Task:evaluate] Finished: bash -c '
+	mapped_percent=$(grep -oE "[0-9]+\.[0-9]+%" -m1 ../alignment_report.txt | tr -d "%")
+	echo "Mapped percent: $mapped_percent%"
+	if (( $(echo "$mapped_percent > 90" | bc -l) )); then
+		echo "OK"
+	else
+		echo "Not OK"
+	fi ' > logs/evaluate.log 2>&1

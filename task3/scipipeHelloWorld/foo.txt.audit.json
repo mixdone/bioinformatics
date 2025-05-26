@@ -1,0 +1,14 @@
+{
+    "ID": "jmzfpmwnxiowefd0kqjm",
+    "ProcessName": "fooer",
+    "Command": "echo foo \u003e foo.txt",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2025-05-26T14:38:25.547433894+07:00",
+    "FinishTime": "2025-05-26T14:38:25.552736026+07:00",
+    "ExecTimeNS": 5302132,
+    "OutFiles": {
+        "foo": "foo.txt"
+    },
+    "Upstream": {}
+}

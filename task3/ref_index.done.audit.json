@@ -1,0 +1,28 @@
+{
+    "ID": "382muv6uqldj9lwaxq2e",
+    "ProcessName": "index",
+    "Command": "minimap2 -d ref.mmi ../GCA_000005845.2_ASM584v2_genomic.fna \u003e logs/minimap2_index.log 2\u003e\u00261 \u0026\u0026 touch ref_index.done",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2025-05-26T23:38:43.458618251+07:00",
+    "FinishTime": "2025-05-26T23:38:44.04593857+07:00",
+    "ExecTimeNS": 587320319,
+    "OutFiles": {
+        "done": "ref_index.done",
+        "log": "logs/minimap2_index.log"
+    },
+    "Upstream": {
+        "GCA_000005845.2_ASM584v2_genomic.fna": {
+            "ID": "73vx8741d453ffj8pzu2",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}
