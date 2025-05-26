@@ -1,8 +1,10 @@
 # Задание 3
 
-Oxford Nanopore MinION/GridION/PromethION (ONT)	minimap2 https://github.com/lh3/minimap2 SciPipe https://scipipe.org/ 
+- Oxford Nanopore MinION/GridION/PromethION (ONT)	
+- minimap2 https://github.com/lh3/minimap2 
+- SciPipe https://scipipe.org/ 
 
-### Ссылкf на загруженные прочтения из NCBI SRA
+### Ссылка на загруженные прочтения из NCBI SRA
 
 https://www.ncbi.nlm.nih.gov/sra/SRX28236620[accn]?report=Full
 
