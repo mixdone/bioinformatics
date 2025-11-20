@@ -1,0 +1,6 @@
+# Задание 5
+
+Последовательность: MSTLTSVSGFPRIGQNRELKKIIEGYWKGANDLAAVKATAAELRAKHWRLQQAAGIDLIASNDFSYYDQMLDTAILLNVIPQRYQRLAFDDQEDTLFAMA
+Программы-предсказатели: RoseTTAFold2, AlphaFold2
+Программа-выравниватель: TMAlign
+
