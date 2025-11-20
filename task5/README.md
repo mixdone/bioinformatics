@@ -46,13 +46,11 @@ MSTLTSVSGFPRIGQNRELKKIIEGYWKGANDLAAVKATAAELRAKHWRLQQAAGIDLIASNDFSYYDQMLDTAILLNVI
 
 
 ## Визуализация выравнивания jsmol
-<img width="490" height="464" alt="image" src="https://github.com/user-attachments/assets/53e2450f-7d9f-4504-877b-79a2cd5780a9" />
-(Protein-1 in blue and Protein-2 in red)
+<img width="490" height="464" alt="image" src="https://github.com/user-attachments/assets/53e2450f-7d9f-4504-877b-79a2cd5780a9" /> (alfafold2 - синий;rf2 - красный)
 
 ## Визуализация выравнивания Mol* 3D Viewer
 
-<img width="429" height="335" alt="image" src="https://github.com/user-attachments/assets/ca985a1a-1f23-4795-b08f-f3e7cb7b3f5c" />
-(Protein-1 in blue and Protein-2 in red)
+<img width="429" height="335" alt="image" src="https://github.com/user-attachments/assets/ca985a1a-1f23-4795-b08f-f3e7cb7b3f5c" /> (alfafold2 - зеленый; rf2 - красный)
 
 
 ## Вывод
