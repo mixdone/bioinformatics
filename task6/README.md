@@ -22,7 +22,8 @@
 <img width="1197" height="804" alt="image" src="https://github.com/user-attachments/assets/25c8d8fe-6ae8-4933-a61a-df24bcb81660" />
 
 ## Visualise 3D docking pose
-<img width="1188" height="711" alt="image" src="https://github.com/user-attachments/assets/99319d10-ecc6-4364-91f5-4fc156f4dccf" />
+<img width="1037" height="691" alt="image" src="https://github.com/user-attachments/assets/5e77b6e4-e90f-44ec-b5c8-2b521263993b" />
+
 
 
 
